@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.RunCucumberTest" time="23.372" tests="21" errors="4" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\kisto\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.class.path" value="C:\Users\kisto\Documents\PTI_6_felev\Szoftverteszteles\Gyakorlas\Gyakorlas_2\target\test-classes;C:\Users\kisto\Documents\PTI_6_felev\Szoftverteszteles\Gyakorlas\Gyakorlas_2\target\classes;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-java\7.11.2\cucumber-java-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-core\7.11.2\cucumber-core-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-gherkin\7.11.2\cucumber-gherkin-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.2\cucumber-gherkin-messages-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\kisto\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\kisto\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\datatable\7.11.2\datatable-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-plugin\7.11.2\cucumber-plugin-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\docstring\7.11.2\docstring-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\kisto\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\kisto\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\kisto\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.11.2\cucumber-junit-platform-engine-7.11.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\kisto\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\kisto\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\kisto\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\kisto\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\kisto\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kisto\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kisto\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kisto\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\kisto\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\kisto\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\kisto\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kisto\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\kisto\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\kisto\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kisto\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\kisto\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\kisto\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\kisto\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\kisto\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\kisto\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\kisto\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\kisto\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\kisto\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\kisto\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\kisto\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\kisto\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\kisto\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\kisto\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\kisto\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\kisto\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\kisto\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\kisto\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\kisto\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\kisto\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kisto\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\kisto\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\kisto\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite\1.9.2\junit-platform-suite-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite-api\1.9.2\junit-platform-suite-api-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.9.2\junit-platform-suite-engine-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.9.2\junit-platform-suite-commons-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Budapest"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="HU"/>
+    <property name="sun.boot.library.path" value="C:\Users\kisto\.jdks\openjdk-20.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\kisto\AppData\Local\Temp\surefire8726109253725432835\surefirebooter-20230516212757848_3.jar C:\Users\kisto\AppData\Local\Temp\surefire8726109253725432835 2023-05-16T21-27-57_683-jvmRun1 surefire-20230516212757848_1tmp surefire_0-20230516212757848_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\kisto\Documents\PTI_6_felev\Szoftverteszteles\Gyakorlas\Gyakorlas_2\target\test-classes;C:\Users\kisto\Documents\PTI_6_felev\Szoftverteszteles\Gyakorlas\Gyakorlas_2\target\classes;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-java\7.11.2\cucumber-java-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-core\7.11.2\cucumber-core-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-gherkin\7.11.2\cucumber-gherkin-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.2\cucumber-gherkin-messages-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\kisto\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\kisto\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\datatable\7.11.2\datatable-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-plugin\7.11.2\cucumber-plugin-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\docstring\7.11.2\docstring-7.11.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\kisto\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\kisto\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\kisto\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kisto\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.11.2\cucumber-junit-platform-engine-7.11.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\kisto\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\kisto\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\kisto\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\kisto\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\kisto\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kisto\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kisto\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kisto\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\kisto\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\kisto\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\kisto\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kisto\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\kisto\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\kisto\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\kisto\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\kisto\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kisto\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\kisto\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\kisto\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\kisto\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\kisto\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\kisto\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\kisto\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\kisto\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\kisto\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\kisto\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\kisto\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\kisto\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\kisto\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\kisto\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\kisto\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\kisto\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\kisto\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\kisto\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\kisto\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\kisto\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\kisto\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\kisto\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\kisto\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\kisto\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\kisto\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\kisto\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite\1.9.2\junit-platform-suite-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite-api\1.9.2\junit-platform-suite-api-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.9.2\junit-platform-suite-engine-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.9.2\junit-platform-suite-commons-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\kisto\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kisto"/>
+    <property name="user.language" value="hu"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Users\kisto\.jdks\openjdk-20.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\kisto\Documents\PTI_6_felev\Szoftverteszteles\Gyakorlas\Gyakorlas_2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\kisto\AppData\Local\Temp\surefire8726109253725432835\surefirebooter-20230516212757848_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="user.name" value="kisto"/>
+    <property name="stdout.encoding" value="Cp1250"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\kisto\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\kisto\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.1.1"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="C:\Users\kisto\Documents\PTI_6_felev\Szoftverteszteles\Gyakorlas\Gyakorlas_2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Users\kisto\.jdks\openjdk-20.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Users\kisto\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1250"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="Reset App state" classname="Saucedemo clearcart" time="4.547">
+    <system-out><![CDATA[
+Scenario: Reset App state                                    &amp#27;[90m# org/example/clearcart.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Username"&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Backpack'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Bolt T-Shirt'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m     &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset_menu'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe price should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'Total: $0.00'&amp#27;[0m                  &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 5399
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+máj. 16, 2023 9:28:00 DU. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 112
+]]></system-err>
+  </testcase>
+  <testcase name="The example" classname="An example" time="0.003">
+    <system-out><![CDATA[
+Scenario: The example                       &amp#27;[90m# org/example/example.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32man example scenario&amp#27;[0m                 &amp#27;[90m# org.example.StepDefinitions.anExampleScenario()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mall step definitions are implemented&amp#27;[0m &amp#27;[90m# org.example.StepDefinitions.allStepDefinitionsAreImplemented()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe scenario passes&amp#27;[0m                  &amp#27;[90m# org.example.StepDefinitions.theScenarioPasses()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.732">
+    <system-out><![CDATA[
+Scenario Outline: Incorrect login attempts                       &amp#27;[90m# org/example/login.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                  &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m''&amp#27;[0m                   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m''&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Epic sadface: Username is required'&amp#27;[0m&amp#27;[32m message is shown&amp#27;[0m &amp#27;[90m# org.example.LoginStepDefs.theErrorMessageMessageIsShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.22">
+    <system-out><![CDATA[
+Scenario Outline: Pieces in cart                          &amp#27;[90m# org/example/pieces.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Username"&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m  &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Backpack'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m    &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'1'&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theCartShouldReadCart(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="1.055">
+    <system-out><![CDATA[
+Scenario Outline: Buying 2 things                            &amp#27;[90m# org/example/shop2.feature:32&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset_menu'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Finish'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                         &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Back home'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Backpack'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Bolt T-Shirt'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m     &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe price should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'Total: $49.66'&amp#27;[0m                 &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.562">
+    <failure message="expected: &lt;Total: $49.66&gt; but was: &lt;Total: $75.56&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Total: $49.66> but was: <Total: $75.56>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)
+	at org.example.ShoppingStepDefs.thePriceShouldRead(ShoppingStepDefs.java:17)
+	at ✽.the price should read 'Total: $49.66'(classpath:org/example/shopping.feature:18)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Buying a backpack and t-shirt              &amp#27;[90m# org/example/shopping.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Backpack'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Bolt T-Shirt'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m     &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe price should read &amp#27;[0m&amp#27;[31m&amp#27;[1m'Total: $49.66'&amp#27;[0m                 &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.opentest4j.AssertionFailedError: expected: <Total: $49.66> but was: <Total: $75.56>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)
+	at org.example.ShoppingStepDefs.thePriceShouldRead(ShoppingStepDefs.java:17)
+	at ✽.the price should read 'Total: $49.66'(classpath:org/example/shopping.feature:18)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.285">
+    <error message="Unable to find element with locator By.id: add-to-cart-sauce-labs-backpack&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.id: add-to-cart-sauce-labs-backpack
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.HomePage.addItemToCart(HomePage.java:80)
+	at org.example.ShoppingStepDefs.somethingIsAddedToTheCart(ShoppingStepDefs.java:12)
+	at ✽.the 'Sauce Labs Backpack' is added to the cart(classpath:org/example/shoppingall.feature:10)
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: Buying all the things in 3 steps           &amp#27;[90m# org/example/shoppingall.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe &amp#27;[0m&amp#27;[31m&amp#27;[1m'Sauce Labs Backpack'&amp#27;[0m&amp#27;[31m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: add-to-cart-sauce-labs-backpack
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.HomePage.addItemToCart(HomePage.java:80)
+	at org.example.ShoppingStepDefs.somethingIsAddedToTheCart(ShoppingStepDefs.java:12)
+	at ✽.the 'Sauce Labs Backpack' is added to the cart(classpath:org/example/shoppingall.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Sauce Labs Bolt T-Shirt'&amp#27;[0m&amp#27;[36m is added to the cart&amp#27;[0m     &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe price should read &amp#27;[0m&amp#27;[36m&amp#27;[1m'Total: $49.66'&amp#27;[0m                 &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.195">
+    <system-out><![CDATA[
+Scenario Outline: Incorrect login attempts                       &amp#27;[90m# org/example/login.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                  &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m      &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m''&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Epic sadface: Password is required'&amp#27;[0m&amp#27;[32m message is shown&amp#27;[0m &amp#27;[90m# org.example.LoginStepDefs.theErrorMessageMessageIsShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.334">
+    <system-out><![CDATA[
+Scenario Outline: Pieces in cart                            &amp#27;[90m# org/example/pieces.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Username"&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                         &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Fleece Jacket'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'2'&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theCartShouldReadCart(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="1.086">
+    <system-out><![CDATA[
+Scenario Outline: Buying 2 things                            &amp#27;[90m# org/example/shop2.feature:33&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset_menu'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Finish'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                         &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Back home'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Sauce Labs Backpack'&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Fleece Jacket"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m    &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe price should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'Total: $86.38'&amp#27;[0m                 &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.559">
+    <failure message="expected: &lt;Total: $114.44&gt; but was: &lt;Total: $140.34&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Total: $114.44> but was: <Total: $140.34>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)
+	at org.example.ShoppingStepDefs.thePriceShouldRead(ShoppingStepDefs.java:17)
+	at ✽.the price should read 'Total: $114.44'(classpath:org/example/shopping.feature:18)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Buying a backpack and t-shirt              &amp#27;[90m# org/example/shopping.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Fleece Jacket"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m  &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Bike Light"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe price should read &amp#27;[0m&amp#27;[31m&amp#27;[1m'Total: $114.44'&amp#27;[0m                &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.opentest4j.AssertionFailedError: expected: <Total: $114.44> but was: <Total: $140.34>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)
+	at org.example.ShoppingStepDefs.thePriceShouldRead(ShoppingStepDefs.java:17)
+	at ✽.the price should read 'Total: $114.44'(classpath:org/example/shopping.feature:18)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.017">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=113.0.5672.93)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [667d94be980e19cd3d1a316c934b9a11, get {url=https://www.saucedemo.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 667d94be980e19cd3d1a316c934b9a11" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [667d94be980e19cd3d1a316c934b9a11, get {url=https://www.saucedemo.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667d94be980e19cd3d1a316c934b9a11
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at org.example.HomePage.openPage(HomePage.java:59)
+	at org.example.CommonStepDefs.theHomePageIsOpened(CommonStepDefs.java:17)
+	at ✽.the home page is opened(classpath:org/example/shoppingall.feature:4)
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: Buying all the things in 3 steps           &amp#27;[90m# org/example/shoppingall.feature:22&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [667d94be980e19cd3d1a316c934b9a11, get {url=https://www.saucedemo.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667d94be980e19cd3d1a316c934b9a11
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at org.example.HomePage.openPage(HomePage.java:59)
+	at org.example.CommonStepDefs.theHomePageIsOpened(CommonStepDefs.java:17)
+	at ✽.the home page is opened(classpath:org/example/shoppingall.feature:4)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m"Sauce Labs Fleece Jacket"&amp#27;[0m&amp#27;[36m is added to the cart&amp#27;[0m  &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m"Sauce Labs Bike Light"&amp#27;[0m&amp#27;[36m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe price should read &amp#27;[0m&amp#27;[36m&amp#27;[1m'Total: $114.44'&amp#27;[0m                &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.199">
+    <system-out><![CDATA[
+Scenario Outline: Incorrect login attempts                                                              &amp#27;[90m# org/example/login.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                                                         &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m                                             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'wrong_password'&amp#27;[0m                                              &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                                                    &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Epic sadface: Username and password do not match any user in this service'&amp#27;[0m&amp#27;[32m message is shown&amp#27;[0m &amp#27;[90m# org.example.LoginStepDefs.theErrorMessageMessageIsShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.234">
+    <system-out><![CDATA[
+Scenario Outline: Pieces in cart                          &amp#27;[90m# org/example/pieces.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Username"&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m  &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Bike Light"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m  &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'3'&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theCartShouldReadCart(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="1.071">
+    <system-out><![CDATA[
+Scenario Outline: Buying 2 things                            &amp#27;[90m# org/example/shop2.feature:34&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                              &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m    &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset_menu'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Finish'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                         &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Back home'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Fleece Jacket"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m  &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Bike Light"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m       &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                      &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe price should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'Total: $64.78'&amp#27;[0m                 &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="10.24">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-to\-cart\-sauce\-labs\-onesie&quot;}&#10;  (Session info: chrome=113.0.5672.93)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [667d94be980e19cd3d1a316c934b9a11, findElement {using=id, value=add-to-cart-sauce-labs-onesie}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 667d94be980e19cd3d1a316c934b9a11" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-sauce\-labs\-onesie"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [667d94be980e19cd3d1a316c934b9a11, findElement {using=id, value=add-to-cart-sauce-labs-onesie}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667d94be980e19cd3d1a316c934b9a11
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.HomePage.addItemToCart(HomePage.java:80)
+	at org.example.ShoppingStepDefs.somethingIsAddedToTheCart(ShoppingStepDefs.java:12)
+	at ✽.the "Sauce Labs Onesie" is added to the cart(classpath:org/example/shopping.feature:10)
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: Buying a backpack and t-shirt                    &amp#27;[90m# org/example/shopping.feature:23&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                    &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m          &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m           &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe &amp#27;[0m&amp#27;[31m&amp#27;[1m"Sauce Labs Onesie"&amp#27;[0m&amp#27;[31m is added to the cart&amp#27;[0m               &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-sauce\-labs\-onesie"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [667d94be980e19cd3d1a316c934b9a11, findElement {using=id, value=add-to-cart-sauce-labs-onesie}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667d94be980e19cd3d1a316c934b9a11
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.HomePage.addItemToCart(HomePage.java:80)
+	at org.example.ShoppingStepDefs.somethingIsAddedToTheCart(ShoppingStepDefs.java:12)
+	at ✽.the "Sauce Labs Onesie" is added to the cart(classpath:org/example/shopping.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m"Test.allTheThings() T-Shirt (Red)"&amp#27;[0m&amp#27;[36m is added to the cart&amp#27;[0m &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                                 &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_first'&amp#27;[0m       &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_last'&amp#27;[0m         &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'1111'&amp#27;[0m                   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                            &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe price should read &amp#27;[0m&amp#27;[36m&amp#27;[1m'Total: $140.34'&amp#27;[0m                      &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.011">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=113.0.5672.93)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [667d94be980e19cd3d1a316c934b9a11, get {url=https://www.saucedemo.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 667d94be980e19cd3d1a316c934b9a11" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [667d94be980e19cd3d1a316c934b9a11, get {url=https://www.saucedemo.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667d94be980e19cd3d1a316c934b9a11
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at org.example.HomePage.openPage(HomePage.java:59)
+	at org.example.CommonStepDefs.theHomePageIsOpened(CommonStepDefs.java:17)
+	at ✽.the home page is opened(classpath:org/example/shoppingall.feature:4)
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: Buying all the things in 3 steps                 &amp#27;[90m# org/example/shoppingall.feature:23&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe home page is opened&amp#27;[0m                                    &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [667d94be980e19cd3d1a316c934b9a11, get {url=https://www.saucedemo.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\kisto\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 667d94be980e19cd3d1a316c934b9a11
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at org.example.HomePage.openPage(HomePage.java:59)
+	at org.example.CommonStepDefs.theHomePageIsOpened(CommonStepDefs.java:17)
+	at ✽.the home page is opened(classpath:org/example/shoppingall.feature:4)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'standard_user'&amp#27;[0m          &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'secret_sauce'&amp#27;[0m           &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                                &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m"Sauce Labs Onesie"&amp#27;[0m&amp#27;[36m is added to the cart&amp#27;[0m               &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m"Test.allTheThings() T-Shirt (Red)"&amp#27;[0m&amp#27;[36m is added to the cart&amp#27;[0m &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                                 &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_first'&amp#27;[0m       &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'testname_last'&amp#27;[0m         &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[36m field is filled with &amp#27;[0m&amp#27;[36m&amp#27;[1m'1111'&amp#27;[0m                   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe &amp#27;[0m&amp#27;[36m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[36m button is clicked&amp#27;[0m                            &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe price should read &amp#27;[0m&amp#27;[36m&amp#27;[1m'Total: $140.34'&amp#27;[0m                      &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.4" classname="Examples" time="0.183">
+    <system-out><![CDATA[
+Scenario Outline: Incorrect login attempts                                        &amp#27;[90m# org/example/login.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                                   &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'locked_out_user'&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m                          &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                              &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Epic sadface: Sorry, this user has been locked out.'&amp#27;[0m&amp#27;[32m message is shown&amp#27;[0m &amp#27;[90m# org.example.LoginStepDefs.theErrorMessageMessageIsShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.4" classname="Examples" time="0.224">
+    <system-out><![CDATA[
+Scenario Outline: Pieces in cart                                     &amp#27;[90m# org/example/pieces.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                      &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Username"&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m            &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m             &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                  &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Test.allTheThings() T-Shirt (Red)"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'4'&amp#27;[0m                                      &amp#27;[90m# org.example.CommonStepDefs.theCartShouldReadCart(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.4" classname="Examples" time="1.095">
+    <system-out><![CDATA[
+Scenario Outline: Buying 2 things                                  &amp#27;[90m# org/example/shop2.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                                    &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Username'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m          &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m           &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset_menu'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                 &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m       &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m         &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m                   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Finish'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                               &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Back home'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                            &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Onesie"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m               &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Test.allTheThings() T-Shirt (Red)"&amp#27;[0m&amp#27;[32m is added to the cart&amp#27;[0m &amp#27;[90m# org.example.ShoppingStepDefs.somethingIsAddedToTheCart(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Cart'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                                 &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Checkout'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                             &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'First Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_first'&amp#27;[0m       &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Last Name'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'testname_last'&amp#27;[0m         &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Zip Code'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'1111'&amp#27;[0m                   &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                            &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe price should read &amp#27;[0m&amp#27;[32m&amp#27;[1m'Total: $25.90'&amp#27;[0m                       &amp#27;[90m# org.example.ShoppingStepDefs.thePriceShouldRead(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Logout" classname="Saucedemo logout" time="0.345">
+    <system-out><![CDATA[
+Scenario: Logout                                          &amp#27;[90m# org/example/logout.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe home page is opened&amp#27;[0m                           &amp#27;[90m# org.example.CommonStepDefs.theHomePageIsOpened()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Username"&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'standard_user'&amp#27;[0m &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Password'&amp#27;[0m&amp#27;[32m field is filled with &amp#27;[0m&amp#27;[32m&amp#27;[1m'secret_sauce'&amp#27;[0m  &amp#27;[90m# org.example.CommonStepDefs.theFieldIsFilledWithText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                       &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m'reset_menu'&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe &amp#27;[0m&amp#27;[32m&amp#27;[1m"Logout"&amp#27;[0m&amp#27;[32m button is clicked&amp#27;[0m                     &amp#27;[90m# org.example.CommonStepDefs.theButtonIsClicked(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe login screen displayed&amp#27;[0m                         &amp#27;[90m# org.example.CommonStepDefs.theLoginScreenDisplayed()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
